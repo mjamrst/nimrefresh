@@ -1,4 +1,5 @@
-from django.shortcuts import render, render_to_response, RequestContext
+from django.shortcuts import render, render_to_response, RequestContext, HttpResponseRedirect
+from django.contrib import messages
 
 # Create your views here.
 
@@ -17,6 +18,8 @@ def contactus(request):
     if form.is_valid():
         save_it = form.save(commit=False)
         save_it.save()
+        messages.success(request, 'Thanks for reaching out')
+        return HttpResponseRedirect('/thank-you/')
     
     return render_to_response("contact.html",
                               locals(),

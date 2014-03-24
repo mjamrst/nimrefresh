@@ -13,15 +13,33 @@
 		<h3>Reach out to us.</h3>
 		<p>
                 You can contact us with anything related to Next Impulse influence marketing services. <br/> We're looking forward to connecting with you.
-		</p>
+		</p>                
 					
 		<!--put in the dhango form code here -->
                 <form method='POST' id="contact-form" action=''> {% csrf_token %}
-                    {{form.as_p}}
+                    <div class="form-group">
+               <label for="first_name">First name</label>
+               <input type="first_name" name="first_name" class="form-control" id="first_name" />
+               </div>
+              
+                        <div class="form-group">
+                        <label for="last_name">Last name</label>
+               <input type="last_name" name="last_name" class="form-control" id="last_name" />
+               </div>
+                               
+                        <div class="form-group">
+               <label for="email">Email</label>
+               <input type="email" name="email" class="form-control" id="email" />
+               </div>
+                               
+                        <div class="form-group">
+               <label for="message">Your message</label>
+               <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+               </div>
                     
 			
                         <div class="submit">
-			<input type="submit" class="button button-small" value="Email us" />
+			<input type="submit" class="button button-large" value="Get in Touch" />
 			</div>
 		    </form>
                 </div>
