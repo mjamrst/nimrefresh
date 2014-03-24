@@ -1,0 +1,25 @@
+.navbar.normal {
+    background: #223741;
+}
+
+.navbar.normal {
+    min-height: 60px;
+}
+
+#home #hero {
+  overflow: hidden;
+  background: #4B4848;
+  background-size: cover;
+  background-image: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52b6b4db7397c_1.JPG");
+  /* background-image: url("http://farm9.staticflickr.com/8222/8254861601_1fbf969a14_b.jpg"); */
+  /* ideal size for home background image is 1024w x 768h */
+}
+
+#home #hero .img {
+  position: absolute;
+  top: 15px;
+  left: 625px;
+  width: 570px;
+  height: 450px;
+  background-image: url("/static/img/static-hero-nim.png");
+}

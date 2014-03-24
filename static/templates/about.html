@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+<title>{% block title %} About Next Impulse Services {% endblock %}</title>
+
+{% block stylesheets %}
+    <!-- css stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/static/css/compiled/theme.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/animate.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compiled/custom.css">
+{% endblock %}
+
+{% block javascript %}
+    <!-- javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/jquery.flexslider.min.js"></script>
+    <script src="/static/js/theme.js"></script>
+{% endblock %}
+
+{% block bodyid %}<body id="about-us"> {% endblock %}
+
+{% block content %}
+    
+<div id="slider">
+		<div class="container">
+			<div class="row header">
+				<div class="col-md-12">
+					<h3>About Next Impulse Services</h3>
+					<p>
+						We want to be your full service partner for influencer marketing campaigns. It's important that we get to know each other a little. Let's consider this a first date, but less awkward.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+				<img src="/static/img/about-us-image-noback.png" class="img-responsive" alt="next impulse story">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>The Next Impulse Services Team</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">					
+					<p>
+						The team at Next Impulse is made up of a diverse group of skill sets. The lion's share of our shared experience comes from the video game, music, sports and tech industries. 
+					</p>
+					<p>
+						We're always looking for smart folks to work and parter with. If you're an agency or individual specialized in marketing or building products geared towards male consumers, we'd love to chat. 
+					</p>
+				</div>
+				<div class="col-md-6">
+					<p>
+						<a href="aboutus.html" class="hiring">
+							We're hiring!
+						</a> We're looking for a digital marketing and social media intern to help out with our Next Impulse Sports website. If you're a sports super fan and love all things digital, go check out the job details
+					</p>
+					<a href="http://nextimpulsesports.com/jobsmarketing_intern/" target="_blank" class="join-team button button-small">Join our team</a>
+				</div>
+			</div>
+			
+<div class="divider"></div>
+			
+<!-- START OF TEAM PHOTOS -->
+			
+			<div class="row team">
+				<div class="col-md-12 team-row">
+					<img src="/static/img/team/mj.png" data-toggle="tooltip" title="Mike Johnson - Managing Partner" alt="mike johnson" />
+					<img src="/static/img/team/kiley.png" data-toggle="tooltip" title="Kiley Kmiec - Managing Partner" alt="kiley kmiec" />
+					<img src="/static/img/team/pete.png" data-toggle="tooltip" title="Pete Blackburn - Content Producer" alt="pete blackburn" />
+					<img src="/static/img/team/john.png" data-toggle="tooltip" title="John Ferensen - Content Producer" alt="john ferensen" />
+				</div>
+				<div class="col-md-12 team-row">
+					<img src="/static/img/team/nick.png" data-toggle="tooltip" title="Nick Hansen - Content Marketing Lead" alt="nick hansen" />
+					<img src="/static/img/team/mike.png" data-toggle="tooltip" title="Mike Blair - Music Marketing" alt="mike blair" />
+					<img src="/static/img/team/ron.png" data-toggle="tooltip" title="Ron Haraka - Video Producer" alt="ron haraka" />
+					<img src="/static/img/team/leboff.png" data-toggle="tooltip" title="Michael Leboff - New Media Producer" alt="michael leboff" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- END OF TEAM PHOTOS -->
+
+	<div id="cta">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wrapper clearfix">
+						<center><h4>Get more info on our approach and how we work in our capabilities deck. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+						<!--HubSpot Call-to-Action Code -->
+						<span class="hs-cta-wrapper" id="hs-cta-wrapper-c502cf85-0ab1-4065-92db-0e452282064a">
+						    <span class="hs-cta-node hs-cta-c502cf85-0ab1-4065-92db-0e452282064a" id="hs-cta-c502cf85-0ab1-4065-92db-0e452282064a">
+						        <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+						        <a href="http://cta-redirect.hubspot.com/cta/redirect/261624/c502cf85-0ab1-4065-92db-0e452282064a"><img class="hs-cta-img" id="hs-cta-img-c502cf85-0ab1-4065-92db-0e452282064a" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/261624/c502cf85-0ab1-4065-92db-0e452282064a.png" /></a>
+						    </span>
+						    <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+						        <script type="text/javascript">
+						            hbspt.cta.load(261624, 'c502cf85-0ab1-4065-92db-0e452282064a');
+						        </script>
+						</span></center>
+						<!-- end HubSpot Call-to-Action Code -->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

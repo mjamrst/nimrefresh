@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+    <title>{% block title %} Next Impulse Services - Influence Marketing for Male Consumers {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/static/css/compiled/theme.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compiled/custom.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/brankic.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/animate.css">
+
+    <!-- javascript -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/jquery.flexslider.min.js"></script>
+    <script src="/static/js/theme.js"></script>
+
+    <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+<!-- START OF NAV -->
+
+<body id="home">
+	<header class="navbar navbar-inverse hero" role="banner">
+  		<div class="container">
+    		<div class="navbar-header">
+		      	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+      			<a href="{% url "home" %}" class="navbar-brand"><img src="/static/img/nim-services-logo-bw.png"></a>
+    		</div>
+    		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      			<ul class="nav navbar-nav navbar-right">
+                            <li><a href="{% url "home" %}">Home</a></li>
+                            <li><a href="{% url "about" %}">About Us</a></li>
+                            <li><a href="{% url "campaigns" %}">How We Help</a></li>
+                            <li><a href="{% url "pricing" %}">Pricing</a></li>
+                            <li><a href="{% url "contactus" %}">Contact Us</a></li>
+        		</ul>
+        			
+         		</nav>
+         		
+ <!-- END OF NAV -->
+ 
+  		</div>
+	</header>
+	
+<!--1. START OF HERO SECTION -->
+
+	<div id="hero">
+		<div class="container">
+			<h1 class="hero-text animated fadeInDown">
+				We Help Brands<br />
+				Reach The Male Consumer.<br />
+				
+			</h1>
+			<p class="sub-text animated fadeInDown">
+				Influencer marketing campaigns for brands who need to reach the male demographic.
+			</p>
+			<div class="cta animated fadeInDown">
+				<a href="{% url "campaigns" %}" class="button-outline">Learn More</a>
+				<a href="{% url "contactus" %}" class="button">Download our Capabilities Deck</a>
+			</div>
+			<div class="img"></div>
+		</div>
+	</div>
+	
+<!--1. END OF HERO SECTION -->
+
+<!--2. START OF INTRO  SECTION -->
+
+	<div id="features">
+		<div class="container">
+			
+			<div class="row header">
+				<div class="col-md-12">
+					<h2>Influencer marketing campaigns for brands who need to reach male consumers.</h2>
+					<p>We are a full service influencer marketing agency for the 18-45 male demographic.</p>
+				</div>
+			</div>
+			
+			<div class="row feature">
+				<div class="col-md-6 info">
+					<h4>Build massive buzz on a minor budget.</h4>
+					<p>
+						Next Impulse helps you create massive buzz by leveraging our owned digital properties as well as our network of relevant websites, blogs and influencers. 
+					</p>
+					<p>
+					    We amplify your campaigns by creating content that speaks to male consumers in an authentic way.
+					</p>
+				</div>
+				<div class="col-md-6 image">
+					<img src="/static/img/horn2.png" class="img-responsive" alt="feature1" />
+				</div>
+			</div>
+		</div>
+
+
+<!--2. END OF INTRO  SECTION -->
+
+			
+			
+<!--3. START OF FEATURES SECTION -->
+			
+			<div id="grid-second">
+				<div class="container">
+				<div class="row header">
+					<div class="col-md-12">
+						<h3>Where do you need us, coach?</h3>
+						
+						<center><p>We can create and execute your influencer marketing campaign from the ground up or we can help extend a campaign you're already working on. Let us know where we can fit in.</h2></p></center>
+					</div>
+				</div>
+				
+					<div class="row features">
+						<div class="col-md-6 feature">
+							<img src="/static/img/circle-icons/full-color/compass.png" alt="strategy" />
+							<div class="info">
+							<strong>Campaign Strategy</strong>
+							<p>Bring us in at the planning phase of your influencer marketing campaign and let us help build your content marketing strategy and a targeted map from your audience to the perfect group of influencers.</p>
+							</div>
+						</div>
+						
+						<div class="col-md-6 feature">
+							<img src="/static/img/circle-icons/full-color/art.png" alt="creative" />
+							<div class="info">
+							<strong>Creative Direction</strong>
+							<p>Do you have digital or social media assets that need to be created for your campaign? Our in-house graphic design team can take care of that.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row features">
+						<div class="col-md-6 feature">
+							<img src="/static/img/circle-icons/full-color/gas.png" alt="amplification" />
+							<div class="info">
+							<strong>Amplification Services</strong>
+							<p>If you already have a baked campaign that needs more eyeballs, partner with us and we will extend the campaign reach.</p>
+							</div>
+						</div>
+					
+						<div class="col-md-6 feature">
+							<img src="/static/img/circle-icons/full-color/trends.png" alt="analytics" />
+							<div class="info">
+							<strong>Campaign Analytics</strong>
+							<p>Measurement is everything. We constantly track against all campaign objectives and measure influencer participation so we can tweak your campaigns in real time.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+
+<!--3. END OF FEATURES SECTION -->
+
+<div class="divider"></div>
+
+
+<!--4. START OF SAMPLE PROGRAMS SECTION -->
+
+	<div id="features">
+		<div class="container">
+			
+			<div class="row header">
+				<div class="col-md-12">
+					<h2>"Be specific. How can I use Next Impulse's influencer marketing services to help my brand?"</h2>
+					<p>Check out our sample campaign scenarios to get a better feel for how we could work together.</p>
+				</div>
+			</div>
+			
+			<div class="row feature backwards">
+				<div class="col-md-6 info">
+					<h4>"How exactly will this help me?"</h4>
+					<p>
+						
+						You've heard the term "influencer marketing" but you want to know: "If I worked with Next Impulse, what EXACTLY would a campaign look like and what would it do for me?"</p>
+						
+					<p>	
+						We have some sample scenarios based on real programs that we've run recently. Check them out to determine if our services are right for your needs. And be sure to <!--HubSpot Call-to-Action Code -->
+						<span class="hs-cta-wrapper" id="hs-cta-wrapper-94d466a1-79be-44cf-baa1-474e592ef97a">
+						    <span class="hs-cta-node hs-cta-94d466a1-79be-44cf-baa1-474e592ef97a" id="hs-cta-94d466a1-79be-44cf-baa1-474e592ef97a">
+						        <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+						        <a href="http://cta-redirect.hubspot.com/cta/redirect/261624/94d466a1-79be-44cf-baa1-474e592ef97a"><img class="hs-cta-img" id="hs-cta-img-94d466a1-79be-44cf-baa1-474e592ef97a" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/261624/94d466a1-79be-44cf-baa1-474e592ef97a.png" /></a>
+						    </span>
+						    <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+						        <script type="text/javascript">
+						            hbspt.cta.load(261624, '94d466a1-79be-44cf-baa1-474e592ef97a');
+						        </script>
+						</span>
+						<!-- end HubSpot Call-to-Action Code -->
+						
+						for successful brand case studies from the last few month. 
+					</p>
+						<!--HubSpot Call-to-Action Code -->
+						<span class="hs-cta-wrapper" id="hs-cta-wrapper-0a8a2a85-b1db-41ab-97b0-5589b410e192">
+						    <span class="hs-cta-node hs-cta-0a8a2a85-b1db-41ab-97b0-5589b410e192" id="hs-cta-0a8a2a85-b1db-41ab-97b0-5589b410e192">
+						        <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+						        <a href="http://cta-redirect.hubspot.com/cta/redirect/261624/0a8a2a85-b1db-41ab-97b0-5589b410e192"><img class="hs-cta-img" id="hs-cta-img-0a8a2a85-b1db-41ab-97b0-5589b410e192" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/261624/0a8a2a85-b1db-41ab-97b0-5589b410e192.png" /></a>
+						    </span>
+						    <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+						        <script type="text/javascript">
+						            hbspt.cta.load(261624, '0a8a2a85-b1db-41ab-97b0-5589b410e192');
+						        </script>
+						</span>
+						<!-- end HubSpot Call-to-Action Code -->
+						
+				</div>
+				<div class="col-md-6 image">
+					<img src="/static/img/jon-superfan.png" class="img-responsive" alt="superfan" />
+				</div>
+			</div>
+		</div>
+		
+	
+<!--4. END OF SAMPLE PROGRAMS SECTION -->
+
+	<div id="cta">
+		<p>
+		Want to see some case studies from recent successful campaigns?
+		<br>
+		<a href='{% url "contactus" %}'> Download our Capabilities Deck </a>
+	
+	    
+	</div>
+	
+	<!-- START OF BRAND LOVE SECTION -->
+
+	<div id="clients">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Awesome World Class Brands</h3>
+					<p>
+						Some of the great brands we've had the pleasure of working with to create buzz with male consumers.
+					</p>
+					<div class="logos">
+						<img src="/static/img/logos/sonos.png">
+						<img src="/static/img/logos/samsung.png">
+						<img src="/static/img/logos/monster.png">
+						<img src="/static/img/logos/ea.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- START OF BRAND LOVE SECTION -->
+	
+	<!-- START OF FOOTER -->
+
+	<div id="footer-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 menu">
+					<h3>Properties</h3>
+					<ul>
+	      				<li>
+	          				<a href="http://nextimpulsesports.com">Next Impulse Sports</a>
+	        			</li>
+	        			<li>
+	        				<a href="http://playgrounddad.com">Playground Dad</a>
+	        			</li>
+	      			</ul>
+				</div>
+				<div class="col-sm-3 menu">
+					<h3>Menu</h3>
+					<ul>
+	        			<li>
+	        				<a href="aboutus.html">About Us</a>
+	        			</li>
+	        			<li>
+	          				<a href="campaigns.html">How We Help</a>
+	          			</li>
+	        			<li>
+	          				<a href="pricing.html">Pricing</a>
+	        			</li>
+	        			<li><a href="blog.html">Blog</a>
+	        			</li>
+	        			<li>
+	          				<a href="contact.html">Contact Us</a>
+	        			</li>
+	        			<li>
+	        					<a href="aboutus.html">Jobs</a>
+	        					<a href="aboutus.html" class="hiring">
+	        						We're hiring!
+	        					</a>
+	        			</li>
+	      			</ul>
+				</div>
+				<div class="col-sm-2 menu">
+					<h3>Social</h3>
+					<ul>
+	      				<li>
+	          				<a href="http://twitter.com/nextimpulse">Twitter</a>
+	        			</li>
+	        			<li>
+	        				<a href="https://www.facebook.com/nextimpulsesports">Facebook</a>
+	        			</li>
+	        			<li>
+	          				<a href="http://www.linkedin.com/company/1599080">LinkedIn</a>
+	        			</li>
+	      			</ul>
+				</div>
+				<div class="col-sm-4 newsletter">
+					<div class="signup clearfix">
+						<p>
+						Become a part of the Inoak movement. Cool and creative workspaces in Oakland, CA.
+						<br>
+						<a href="http://www.inoak.org/"><img src="/static/img/inoak-logo.png" class="img-responsive" alt="inaok logo" /></a>			
+					</div>
+					<a href="http://twitter.com/nextimpulse">
+						<img src="/static/img/social/social-twitter.png" alt="twitter" />
+					</a>
+					<a href="https://www.facebook.com/nextimpulsesports">
+						<img src="/static/img/social/social-facebook.png" alt="facebook" />
+					</a>
+					<a href="http://www.linkedin.com/company/1599080">
+						<img src="/static/img/social/social-linkedin.png" alt="linkedin" />
+					</a>
+				</div>
+			</div>
+			<div class="row credits">
+				<div class="col-md-12">
+				    Next Impulse Media LLC &#169; 2014
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+</body>
+</html>

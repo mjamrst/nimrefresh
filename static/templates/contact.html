@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+<title>{% block title %} Contact Next Impulse Services {% endblock %}</title>
+
+{% block bodyid %} <body id="contact-us"> {% endblock %}
+
+{% block content %}
+
+    <div id="info">
+	<div class="container">
+	    <div class="row">
+		<div class="col-md-8 message">
+		<h3>Reach out to us.</h3>
+		<p>
+                You can contact us with anything related to Next Impulse influence marketing services. <br/> We're looking forward to connecting with you.
+		</p>
+					
+		<!--put in the dhango form code here -->
+                <form method='POST' id="contact-form" action=''> {% csrf_token %}
+                    {{form.as_p}}
+                    
+			
+                        <div class="submit">
+			<input type="submit" class="button button-small" value="Email us" />
+			</div>
+		    </form>
+                </div>
+                                
+				<div class="col-md-4 contact">
+					<div class="address">
+						<h3>Our Address</h3>
+						<p>
+							2610 Ford Street, Suite D  <br />
+							Oakland, CA 94601
+						</p>
+					</div>
+					<div class="phone">
+						<h3>By Phone</h3>
+						<p>
+							650-427-0021
+						</p>
+					</div>
+					<div class="online-support">
+						<strong>Looking to chat, right now?</strong>
+						<p>
+							Feel free to hit us via the chat window below.
+						</p>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com/nextimpulsesports" class="fb"><img src="/static/img/social/fb.png" alt="facebook" /></a>
+						<a href="https://twitter.com/nextimpulse" class="tw"><img src="/static/img/social/tw.png" alt="twitter" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

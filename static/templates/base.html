@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+    <title>{% block title %} Next Impulse Services - Influence Marketing for Male Consumers {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+{% block stylesheets %}
+    <!-- css stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/static/css/compiled/theme.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/brankic.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/entypo.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/animate.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/vendor/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/compiled/custom.css">
+{% endblock %}
+
+{% block javascript %}
+    <!-- javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/jquery.flexslider.min.js"></script>
+    <script src="/static/js/theme.js"></script>
+{% endblock %}
+
+    <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+
+{% block bodyid %}<body id="home">{% endblock %}
+
+{% include 'navbar.html' %}
+
+{% block content %}
+
+{% endblock %}
+	
+{% include 'footer.html' %}
