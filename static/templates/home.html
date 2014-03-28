@@ -273,22 +273,21 @@
 					<h3>Menu</h3>
 					<ul>
 	        			<li>
-	        				<a href="aboutus.html">About Us</a>
+	        				<a href="{% url "about" %}">About Us</a>
 	        			</li>
 	        			<li>
-	          				<a href="campaigns.html">How We Help</a>
+	          				<a href="{% url "campaigns" %}">How We Help</a>
 	          			</li>
 	        			<li>
-	          				<a href="pricing.html">Pricing</a>
+	          				<a href="{% url "pricing" %}">Pricing</a>
 	        			</li>
-	        			<li><a href="blog.html">Blog</a>
+	        		
+	        			<li>
+	          				<a href="{% url "contactus" %}">Contact Us</a>
 	        			</li>
 	        			<li>
-	          				<a href="contact.html">Contact Us</a>
-	        			</li>
-	        			<li>
-	        					<a href="aboutus.html">Jobs</a>
-	        					<a href="aboutus.html" class="hiring">
+	        					<a href="{% url "about" %}">Jobs</a>
+	        					<a href="{% url "about" %}" class="hiring">
 	        						We're hiring!
 	        					</a>
 	        			</li>
