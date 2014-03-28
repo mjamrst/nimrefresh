@@ -1,5 +1,5 @@
 """
-Django settings for nimrefresh project.
+Django settings for myproject project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -7,7 +7,6 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
-
 from .email_info import EMAIL_USE_TLS, EMAIL_HOST, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_PORT
 
 EMAIL_USE_TLS = EMAIL_USE_TLS
@@ -19,21 +18,19 @@ EMAIL_PORT = EMAIL_PORT
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-#BASE_DIR = /Users/mjamrst/desktop/nimrefresh/src/
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ejnwnvjwmz-s=sl*#*d)=b1vr%ey*dh@ij0fwslc$wxody*ik('
+SECRET_KEY = 'r*)zrtoq^)wz^zkj6q62w#kc*2=%13v_duwh9q&+3%+k7t+dhp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.nextimpulsemedia.com', 'nextimpulsemedia.com', 'www.next-impulse.com', 'next-impulse.com']
 
 
 # Application definition
@@ -45,7 +42,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'contact',
+    'south',
+    'contact',  
 )
 
 MIDDLEWARE_CLASSES = (
@@ -67,8 +65,10 @@ WSGI_APPLICATION = 'nimrefresh.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nimrefresh_db',
+        'USER': 'nimref',
+        'PASSWORD': '22iygu3dt873ww98',
     }
 }
 
@@ -91,16 +91,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Template location
-TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(BASE_DIR), "static", "templates"),
-    #'/Users/mjamrst/desktop/nimrefresh/static/templates',
-)
-
-if DEBUG:
+if not DEBUG:
     MEDIA_URL = '/media/'
-    STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "static-only")
-    MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
+    STATIC_ROOT = '/home/mjamrst/webapps/nimrefresh_static'
+    MEDIA_ROOT = '/home/mjamrst/webapps/nimrefresh_static/media'
     STATICFILES_DIRS = (
-        os.path.join(os.path.dirname(BASE_DIR), "static", "static"),
+        '/home/mjamrst/webapps/nimrefresh_static/static',
+    )
+    # Template location
+    TEMPLATE_DIRS = (
+        '/home/mjamrst/webapps/nimrefresh_static/templates',
+        #'/Users/mjamrst/desktop/nimrefresh/static/templates',
     )
